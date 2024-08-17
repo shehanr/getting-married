@@ -3,8 +3,8 @@ description: "Shehan and Susan are getting married!!! Ahhh!!!!"
 baseurl: ""
 url: "https://shehan-and-susan.github.io" # the base hostname & protocol for your site
 
-plugins:
-  - jekyll-postcss
+#plugins:
+#  - jekyll-postcss
 
 postcss:
   cache: false
