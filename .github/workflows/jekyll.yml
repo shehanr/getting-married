@@ -1,0 +1,43 @@
+name: Deploy Jekyll site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v3
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1' # Specify your Ruby version here
+          bundler-cache: true
+
+      - name: Install dependencies
+        run: bundle install
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20' # Node.js version 20
+
+      - name: Install npm dependencies
+        run: npm install
+
+      - name: Precompile Tailwind CSS using PostCSS
+        run: npx postcss ./assets/css/main.css -o ./assets/css/tailwind.css
+
+      - name: Build the Jekyll site
+        run: bundle exec jekyll build --trace
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
