@@ -1,11 +1,10 @@
-title: "Shehan & Susan's Wedding Site" # the name of your site, e.g. ACME Corp.
+title: "Shehan & Susan's Wedding Site" # the name of your site
 description: "Shehan and Susan are getting married!!! Ahhh!!!!"
 baseurl: ""
 url: "https://shehan-and-susan.github.io" # the base hostname & protocol for your site
 
-#plugins:
-#  - jekyll-postcss
+# Default plugins (none listed here)
+plugins: []
 
 postcss:
   cache: false
-
