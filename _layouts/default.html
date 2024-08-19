@@ -2,11 +2,11 @@
 <html lang="{{ site.lang | default: 'en-US' }}">
 {% include head.html %}
 <body class="min-h-full bg-sapphire antialiased">
-  {% include mobile-menu.html %}
   <header>
+    {% include mobile-menu.html %}
+    {% include nav.html %}
   </header>
   <main>
-    {% include nav.html %}
     {{ content }}
   </main>
   {% include footer.html %}

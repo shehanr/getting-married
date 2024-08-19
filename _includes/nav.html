@@ -1,28 +1,33 @@
 <nav class="p-5 flex justify-between items-center z-40 w-full {% if page.url == '/' %}absolute{% endif %}">
-    <div class="spin-please z-50">
-        <i class="bi bi-suit-heart-fill text-white white-text-shadow text-3xl"></i>
+    <div class="container mx-auto flex justify-between items-center">
+        <div class="spin-please z-50">
+            <i class="bi bi-suit-heart-fill text-white white-text-shadow text-3xl"></i>
+        </div>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex md:items-center space-x-4 absolute left-1/2 transform -translate-x-1/2">
+            <li><a href="{{ '/' | relative_url }}" class="text-lg font-bold text-white {% if page.url == '/' %}backdrop-blur-sm bg-white/50 rounded-full px-4 py-1{% endif %}">Home</a></li>
+            <li class="text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path>
+            </svg>
+            </li>
+            <li><a href="{{ '/details/' | relative_url }}" class="text-lg font-bold text-white {% if page.url == '/details/' %}backdrop-blur-sm bg-white/50 rounded-full px-4 py-1{% endif %}">Details</a></li>
+            <li class="text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path>
+            </svg>
+            </li>
+            <li><a href="{{ 'https://www.theknot.com/us/shehan-rajapakse-and-susan-fore-nov-2024/rsvp' | absolute_url }}" class="text-lg font-bold text-white" target="_blank" class="text-lg font-bold text-white {% if page.url == '/rsvp/' %}backdrop-blur-sm bg-white/50 rounded-full px-4 py-1{% endif %}">RSVP</a></li>
+        </ul>
+
+        <!-- Animating Hamburger-->
+        <button class="navbar-burger flex items-center text-white p-3 md:hidden z-50">
+            <div class="burger-lines">
+                <span class="block h-1 w-6 bg-current mb-1 transform transition-transform duration-300 ease-in-out"></span>
+                <span class="block h-1 w-6 bg-current mb-1 transform transition-transform duration-300 ease-in-out"></span>
+                <span class="block h-1 w-6 bg-current transform transition-transform duration-300 ease-in-out"></span>
+            </div>
+        </button>
     </div>
-    <button class="navbar-burger flex items-center text-white p-3 md:hidden z-50">
-        <svg class="block h-6 w-6 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <title>Mobile Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-        </svg>
-    </button>
-    <!-- Desktop Menu -->
-    <ul class="hidden md:flex md:items-center space-x-4 absolute left-1/2 transform -translate-x-1/2">
-        <li><a href="{{ '/' | relative_url }}" class="text-lg font-bold text-white {% if page.url == '/' %}backdrop-blur-sm bg-white/50 rounded-full px-4 py-1{% endif %}">Home</a></li>
-        <li class="text-white">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path>
-        </svg>
-        </li>
-        <li><a href="{{ '/details/' | relative_url }}" class="text-lg font-bold text-white {% if page.url == '/details/' %}backdrop-blur-sm bg-white/50 rounded-full px-4 py-1{% endif %}">Details</a></li>
-        <li class="text-white">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path>
-        </svg>
-        </li>
-        <li><a href="{{ 'https://www.theknot.com/us/shehan-rajapakse-and-susan-fore-nov-2024/rsvp' | absolute_url }}" class="text-lg font-bold" target="_blank" class="text-lg font-bold text-white {% if page.url == '/rsvp/' %}backdrop-blur-sm bg-white/50 rounded-full px-4 py-1{% endif %}">RSVP</a></li>
-    </ul>
 </nav>
-      

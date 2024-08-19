@@ -4,8 +4,8 @@ title: "Details"
 permalink: /Details
 ---
 <!-- Tiles Container -->
-<div class="container mx-auto p-4 md:pt-5 md:p-10 flex-grow h-[calc(100vh-5rem)] relative">
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 h-full">
+<div class="container m-auto py-4 md:pt-5 md:py-10 px-5 flex-grow h-[calc(100vh-5rem)] relative">
+  <div id="details-grid" class="grid grid-cols-1 md:grid-cols-2 gap-5 h-full">
     <!-- Tile 1 -->
     <div class="tile backdrop-blur-sm bg-white/25 shadow-md flex items-center justify-center cursor-pointer rounded-md" data-target="#expanded-1">
       <div class="text-center text-white">
@@ -28,51 +28,49 @@ permalink: /Details
       </div>
     </div>
     <!-- Tile 4 -->
-    <a href="{{ 'https://www.theknot.com/us/shehan-rajapakse-and-susan-fore-nov-2024/registry' | absolute_url }}" target="_blank">
-      <div class="tile h-full backdrop-blur-sm bg-white/25 shadow-md flex items-center justify-center cursor-pointer rounded-md">
+    <a href="{{ 'https://www.theknot.com/us/shehan-rajapakse-and-susan-fore-nov-2024/registry' | absolute_url }}" target="_blank" class="tile h-full backdrop-blur-sm bg-white/25 shadow-md flex items-center justify-center cursor-pointer rounded-md">
         <div class="text-center text-white">
           <i class="bi bi-gift text-3xl"></i>
           <h3 class="mt-2 text-xl font-bold font-homemade-apple">Registry</h3>
         </div>
-      </div>
     </a>
     <!-- Expanded Content Sections -->
-    <div id="expanded-1" class="expanded-content hidden w-full h-full bg-white text-the-knot p-5 pr-1 z-10 overflow-auto col-span-2 relative rounded-md">
-      <button class="close-expanded absolute top-2 right-4 text-2xl">&times;</button>
-      <div class="container h-full overflow-y-auto pr-4 flex items-start md:items-center justify-center">
-          <div class="w-full mt-8 md:mt-0">
-              <h2 class="text-5xl font-bold source-serif-4 mb-6 text-center">Schedule</h2>
-              <div class="mb-8 text-center">
+    <div id="expanded-1" class="expanded-content hidden w-full h-full bg-white font-abhaya-libre text-the-knot p-5 pr-1 z-10 overflow-auto col-span-2 relative rounded-md">
+        <button class="close-expanded absolute top-2 right-4 text-2xl">&times;</button>
+        <div class="container h-full overflow-y-auto pr-4 flex items-start justify-center">
+            <div class="w-full my-auto mx-6 md:mx-12 lg:mx-22 xl:mx-36">
+                <h2 class="text-5xl font-bold mb-6 text-center">Schedule</h2>
+                  <div class="text-center">
                   <h4 class="text-xl font-semibold mb-2">Wedding Day</h4>
                   <div class="mb-4">
                       <p class="text-lg">1000 Westover at Maymont</p>
                       <p class="text-lg">1000 Westover Rd, Richmond, VA 23220</p>
-                      <p class="text-md">Time: 4:30 PM-10:00 PM</p>
+                      <p class="text-md">Time: 5:00 PM-10:00 PM</p>
                       <p class="text-md">Attire: Black Tie Optional</p>
                   </div>
               </div>
               <div class="space-y-6">
-                  <div class="grid grid-cols-1 md:grid-cols-2 gap-3 border-b border-gray-300 mx-8 pb-6">
-                      <div class="md:text-right">
-                          <h4 class="text-xl font-semibold">4:30 PM–5:00 PM</h4>
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 border-b border-gray-300 mx-8 pb-6">
+                      <div class="text-center md:text-right">
+                          <h4 class="text-2xl md:text-xl font-semibold">3:30 PM</h4>
                       </div>
-                      <div class="md:text-left pl-0 md:pl-6">
+                      <div class="text-center md:text-left">
                           <h4 class="text-xl font-semibold">Ceremony (Family Only)</h4>
                       </div>
                   </div>
-                  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 border-b border-gray-300 mx-8 pb-6">
-                      <div class="md:text-right">
-                          <h4 class="text-xl font-semibold">5:00 PM–6:00 PM</h4>
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 border-b border-gray-300 mx-8 pb-6">
+                      <div class="text-center md:text-right">
+                          <h4 class="text-2xl md:text-xl font-semibold">5:00 PM–6:00 PM</h4>
                       </div>
-                      <div class="md:text-left pl-0 md:pl-6">
+                      <div class="text-center md:text-left">
                           <h4 class="text-xl font-semibold">Cocktail Hour</h4>
                       </div>
                   </div>
-                  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mx-8 pb-6">
-                      <div class="md:text-right">
-                          <h4 class="text-xl font-semibold">6:00 PM–10:00 PM</h4>
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mx-8 pb-6">
+                      <div class="text-center md:text-right">
+                          <h4 class="text-2xl md:text-xl font-semibold">6:00 PM–10:00 PM</h4>
                       </div>
-                      <div class="md:text-left pl-0 md:pl-6">
+                      <div class="text-center md:text-left">
                           <h4 class="text-xl font-semibold">Dinner and Festivities</h4>
                       </div>
                   </div>
@@ -84,25 +82,23 @@ permalink: /Details
   
   
   
-  <div id="expanded-2" class="expanded-content hidden w-full h-full bg-white text-the-knot p-5 pr-1 z-10 overflow-auto col-span-2 relative rounded-md">
+  <div id="expanded-2" class="expanded-content hidden w-full h-full bg-white font-abhaya-libre text-the-knot p-5 pr-1 z-10 overflow-auto col-span-2 relative rounded-md">
     <button class="close-expanded absolute top-2 right-4 text-2xl">×</button>
-    <div class="container h-full overflow-y-auto pr-4 flex items-start md:items-center justify-center">
-        <div class="w-full mt-8 md:mt-0">
-            <h2 class="text-5xl font-bold source-serif-4 mb-6 text-center">Hotel Accommodations</h2>
-            <div class="mb-8 text-center">
+    <div class="container h-full overflow-y-auto pr-4 flex items-start justify-center">
+        <div class="w-full my-auto mx-4 md:mx-8">
+            <h2 class="text-5xl font-bold mb-6 text-center">Hotel Accommodations</h2>
+            <div class="text-center">
                 <h4 class="text-xl font-semibold mb-2">Courtyard by Marriott Richmond Scott’s Addition</h4>
                 <div class="mb-4">
                     <p class="text-lg">2907 W Broad St, Richmond, VA 23230</p>
-                    <p class="text-md">Reference: Fore-Rajapakse Wedding Block</p>
+                    <p class="text-md">Reference: Rajapakse-Fore Wedding Block</p>
                     <p class="text-md">Distance from Venue: Approximately 2.5 miles</p>
                 </div>
             </div>
             <div class="space-y-6">
                 <p class="text-lg mx-8 mb-6">
                     We've reserved a block of rooms at the Courtyard by Marriott in Scott’s Addition, a vibrant neighborhood known for its eclectic mix of restaurants, breweries, and entertainment options. This hotel offers a perfect base for exploring Richmond, with plenty of local spots just a short walk or drive away. 
-                </p>
-                <p class="text-lg mx-8 mb-6">
-                    Scott’s Addition is famous for its craft breweries, including Ardent Craft Ales, The Veil Brewing Co., and Hardywood Park Craft Brewery, all within a mile of the hotel. If you're in the mood for a bite, you'll find fantastic restaurants like ZZQ Texas Craft Barbeque and Lunch.SUPER available nearby.
+                    Scott’s Addition is famous for its craft breweries, including Ardent Craft Ales, The Veil Brewing Co., and Hardywood Park Craft Brewery, all within a mile of the hotel. If you're in the mood for a bite, you'll find fantastic restaurants like ZZQ Texas Craft Barbeque, Cochiloco, and Lunch & Supper available nearby.
                 </p>
                 <p class="text-lg mx-8 mb-6">
                     For those looking to enjoy Richmond's vibrant nightlife, you'll be pleased to know that this area also boasts several trendy bars and cocktail lounges, perfect for unwinding after a day of wedding festivities. Plus, with the hotel only 2.5 miles away from the venue at Maymont, getting to and from the ceremony and reception will be a breeze.
@@ -115,17 +111,14 @@ permalink: /Details
     </div>
 </div>
 
-<div id="expanded-3" class="expanded-content hidden w-full h-full bg-white text-the-knot p-5 pr-1 z-10 overflow-auto col-span-2 relative rounded-md">
+<div id="expanded-3" class="expanded-content hidden w-full h-full bg-white font-abhaya-libre text-the-knot p-5 pr-1 z-10 overflow-auto col-span-2 relative rounded-md">
   <button class="close-expanded absolute top-2 right-4 text-2xl">&times;</button>
-  <div class="container h-full overflow-y-auto pr-4 flex items-start md:items-center justify-center">
-    <div class="w-full mt-8 md:mt-0">            <h2 class="text-5xl font-bold source-serif-4 my-6 text-center">Things to do in Richmond</h2>
-            <div class="mb-8 text-center">
-                <a class="text-xl font-semibold mb-2" href="https://letmegooglethat.com/?q=Things+to+do+in+Richmond%2C+VA">Check here</a>
-            </div>
-    
-            <div class="space-y-6">
+  <div class="container h-full overflow-y-auto pr-4 flex items-start justify-center">
+    <div class="w-full my-auto mx-4 md:mx-8">
+        <h2 class="text-5xl font-bold my-6 text-center">Things to do in Richmond</h2>
+            <div>
                 <div>
-                    <h3 class="text-3xl font-bold">Places to Visit</h3>
+                    <h3 class="text-3xl text-center font-bold pb-3">Places to Visit</h3>
                     <ul class="list-disc list-inside text-lg">
                         <li><strong>Maymont</strong> – A beautiful estate with gardens, wildlife exhibits, and a historic mansion.</li>
                         <li><strong>Virginia Museum of Fine Arts</strong> – A world-class art museum with diverse collections.</li>
@@ -135,7 +128,7 @@ permalink: /Details
                 </div>
     
                 <div>
-                    <h3 class="text-3xl font-bold">Restaurants</h3>
+                    <h3 class="text-3xl text-center font-bold pt-5 pb-3">Restaurants</h3>
                     <ul class="list-disc list-inside text-lg">
                         <li><strong>Lemaire</strong> – Fine dining at The Jefferson Hotel.</li>
                         <li><strong>Stella's</strong> – Delicious Greek cuisine.</li>
@@ -145,7 +138,7 @@ permalink: /Details
                 </div>
     
                 <div>
-                    <h3 class="text-3xl font-bold">Experiences</h3>
+                    <h3 class="text-3xl text-center font-bold pt-5 pb-3">Experiences</h3>
                     <ul class="list-disc list-inside text-lg">
                         <li><strong>Riverfront Canal Walk</strong> – A scenic walk along the canal in downtown Richmond.</li>
                         <li><strong>James River Park</strong> – Outdoor activities like kayaking, hiking, and picnicking.</li>

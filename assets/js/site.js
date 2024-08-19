@@ -1,6 +1,8 @@
 $(document).ready(function() {
   // Toggle mobile menu on navbar burger click
   $('.navbar-burger').click(function() {
+    $(this).toggleClass('active'); // Toggle the active class to animate the burger icon
+    
     var $menu = $('.mobile-menu');
 
     if ($menu.is(':hidden')) {
@@ -51,16 +53,20 @@ $(document).ready(function() {
 
 
     /* Details Page */
+    const detailsGrid = $('#details-grid');
+
     $('.tile').on('click', function() {
-      var target = $(this).data('target');
+      let target = $(this).data('target');
       if(target !== undefined){
         $('#expanded-container').removeClass('hidden');
         $(target).removeClass('hidden');
         $('.tile').addClass('hidden');
+        detailsGrid.removeClass('gap-5');
       }
     });
   
     $('.close-expanded').on('click', function() {
+      detailsGrid.addClass('gap-5');
       $(this).closest('.expanded-content').addClass('hidden');
       $('.tile').removeClass('hidden');
     });
