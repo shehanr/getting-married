@@ -35,6 +35,7 @@ jobs:
         run: npx postcss ./assets/css/main.css -o ./assets/css/main.css
 
       - name: Build the Jekyll site
+        run: bundle exec jekyll build --trace
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
