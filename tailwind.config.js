@@ -22,9 +22,9 @@ module.exports = {
         'whispering-blue': '#E2E8f0'
       },
       fontFamily: {
+        'abhaya-libre': ['Abhaya Libre', 'serif'],
         'homemade-apple': ['Homemade Apple', 'cursive'],
-        'namun-gothic': ['Namun Gothic', 'sans-serif'],
-        'source-serif-4': ["Source Serif 4", 'serif'],
+        'source-sans-pro': ['Source Sans Pro', 'sans-serif'],
       },
       minHeight: {
         'full': '100%',
