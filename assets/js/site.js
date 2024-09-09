@@ -6,7 +6,7 @@ $(document).ready(function() {
     var $menu = $('.mobile-menu');
 
     if ($menu.is(':hidden')) {
-      $('body').addClass('no-scroll');
+      $('body').addClass('no-scroll').css('background-color', '#3E4E5Fff'); // Set body background color to charcoal inline
       $menu.css({
         display: "flex",
         flexDirection: "column"
@@ -17,9 +17,10 @@ $(document).ready(function() {
         });
       });
     } else {
+      $('body').removeClass('no-scroll').css('background-color', '');
       $menu.find('li').animate({ opacity: 0 }, 300, function() {
         $menu.slideUp(300, function() {
-          $('body').removeClass('no-scroll');
+          $('body').removeClass('no-scroll').css('background-color', ''); // Revert body background color
         });
       });
     }
