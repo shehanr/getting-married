@@ -13,7 +13,7 @@
   },
 "scripts": {
   "watch:tailwind": "postcss ./assets/css/tailwind.css -o ./assets/css/tailwind.css --watch",
-  "combine:css": "nodemon --watch ./assets/css/tailwind.css --watch ./assets/css/custom.css --exec \"cat ./assets/css/tailwind.css ./assets/css/custom.css > ./assets/css/main.css\"",
+  "combine:css": "cat ./assets/css/tailwind.css ./assets/css/custom.css > ./assets/css/main.css",
   "serve": "concurrently \"bundle exec jekyll serve --config _config.yml --livereload\" \"npm run watch:tailwind\" \"npm run combine:css\""
 }
 
