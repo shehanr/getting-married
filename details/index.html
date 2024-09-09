@@ -58,7 +58,7 @@
     <li class="p-4 opacity-0 z-50"><a href="/details/" class="text-lg font-bold backdrop-blur-sm bg-white/50 rounded-full px-4 py-1">Details</a></li>
     <li class="p-4 opacity-0 z-50"><a href="https://www.theknot.com/us/shehan-rajapakse-and-susan-fore-nov-2024/rsvp" class="text-lg font-bold" target="_blank">RSVP</a></li>
   </ul>  
-    <nav class="p-5 flex justify-between items-center z-40 w-full ">
+    <nav class="p-5 flex justify-between items-center z-40 h-20 w-full ">
     <div class="container mx-auto flex justify-between items-center">
         <div class="spin-please z-50">
             <i class="bi bi-suit-heart-fill text-white white-text-shadow text-3xl"></i>
@@ -95,159 +95,335 @@
   </header>
   <main>
     <!-- Tiles Container -->
-<div class="container m-auto py-4 md:pt-5 md:py-10 px-5 flex-grow h-[calc(100vh-5rem)] relative">
+<div class="container bg-sapphire m-auto py-3 px-5 md:px-0 flex-grow h-[calc(100vh-10rem)] relative">
   <div id="details-grid" class="grid grid-cols-1 md:grid-cols-2 gap-5 h-full">
     <!-- Tile 1 -->
-    <div class="tile backdrop-blur-sm bg-white/25 shadow-md flex items-center justify-center cursor-pointer rounded-md" data-target="#expanded-1">
+    <div
+      class="tile backdrop-blur-sm bg-white/25 shadow-md flex items-center justify-center cursor-pointer rounded-md p-5 hover:bg-white/40 hover:shadow-xl hover:border-2 hover:border-white/70 hover:ring-2 hover:ring-white/50 transition-shadow transition-colors transition-border duration-300"
+      data-target="#expanded-1"
+    >
       <div class="text-center text-white">
         <i class="bi bi-calendar2-event text-3xl"></i>
         <h3 class="mt-2 text-xl font-bold font-homemade-apple">Schedule</h3>
       </div>
     </div>
     <!-- Tile 2 -->
-    <div class="tile backdrop-blur-sm bg-white/25 shadow-md flex items-center justify-center cursor-pointer rounded-md" data-target="#expanded-2">
+    <div
+      class="tile backdrop-blur-sm bg-white/25 shadow-md flex items-center justify-center cursor-pointer rounded-md p-5 hover:bg-white/40 hover:shadow-xl hover:border-2 hover:border-white/70 hover:ring-2 hover:ring-white/50 transition-shadow transition-colors transition-border duration-300"
+      data-target="#expanded-2"
+    >
       <div class="text-center text-white">
         <i class="bi bi-building text-3xl"></i>
-        <h3 class="mt-2 text-xl font-bold font-homemade-apple">Hotel Accommodations</h3>
+        <h3 class="mt-2 text-xl font-bold font-homemade-apple">
+          Hotel Accommodations
+        </h3>
       </div>
     </div>
     <!-- Tile 3 -->
-    <div class="tile backdrop-blur-sm bg-white/25 shadow-md flex items-center justify-center cursor-pointer rounded-md" data-target="#expanded-3">
+    <div
+      class="tile backdrop-blur-sm bg-white/25 shadow-md flex items-center justify-center cursor-pointer rounded-md p-5 hover:bg-white/40 hover:shadow-xl hover:border-2 hover:border-white/70 hover:ring-2 hover:ring-white/50 transition-shadow transition-colors transition-border duration-300"
+      data-target="#expanded-3"
+    >
       <div class="text-center text-white">
         <i class="bi bi-geo-alt text-3xl"></i>
-        <h3 class="mt-2 text-xl font-bold font-homemade-apple">Things to Do in Richmond, VA</h3>
+        <h3 class="mt-2 text-xl font-bold font-homemade-apple">
+          Things to Do in Richmond, VA
+        </h3>
       </div>
     </div>
     <!-- Tile 4 -->
-    <a href="https://www.theknot.com/us/shehan-rajapakse-and-susan-fore-nov-2024/registry" target="_blank" class="tile h-full backdrop-blur-sm bg-white/25 shadow-md flex items-center justify-center cursor-pointer rounded-md">
-        <div class="text-center text-white">
-          <i class="bi bi-gift text-3xl"></i>
-          <h3 class="mt-2 text-xl font-bold font-homemade-apple">Registry</h3>
-        </div>
+    <a
+      href="https://www.theknot.com/us/shehan-rajapakse-and-susan-fore-nov-2024/registry"
+      target="_blank"
+      class="tile backdrop-blur-sm bg-white/25 shadow-md flex items-center justify-center cursor-pointer rounded-md p-5 hover:bg-white/40 hover:shadow-xl hover:border-2 hover:border-white/70 hover:ring-2 hover:ring-white/50 transition-shadow transition-colors transition-border duration-300"
+      data-target="#expanded-1"
+    >
+      <div class="text-center text-white">
+        <i class="bi bi-gift text-3xl"></i>
+        <h3 class="mt-2 text-xl font-bold font-homemade-apple">Registry</h3>
+      </div>
     </a>
     <!-- Expanded Content Sections -->
-    <div id="expanded-1" class="expanded-content hidden w-full h-full bg-white font-abhaya-libre text-the-knot p-5 pr-1 z-10 overflow-auto col-span-2 relative rounded-md">
-        <button class="close-expanded absolute top-2 right-4 text-2xl">&times;</button>
-        <div class="container h-full overflow-y-auto pr-4 flex items-start justify-center">
-            <div class="w-full my-auto mx-6 md:mx-12 lg:mx-22 xl:mx-36">
-                <h2 class="text-5xl font-bold mb-6 text-center">Schedule</h2>
-                  <div class="text-center">
-                  <h4 class="text-xl font-semibold mb-2">Wedding Day</h4>
-                  <div class="mb-4">
-                      <p class="text-lg">1000 Westover at Maymont</p>
-                      <p class="text-lg">1000 Westover Rd, Richmond, VA 23220</p>
-                      <p class="text-md">Time: 5:00 PM-10:00 PM</p>
-                      <p class="text-md">Attire: Black Tie Optional</p>
-                  </div>
-              </div>
-              <div class="space-y-6">
-                  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 border-b border-gray-300 mx-8 pb-6">
-                      <div class="text-center md:text-right">
-                          <h4 class="text-2xl md:text-xl font-semibold">3:30 PM</h4>
-                      </div>
-                      <div class="text-center md:text-left">
-                          <h4 class="text-xl font-semibold">Ceremony (Family Only)</h4>
-                      </div>
-                  </div>
-                  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 border-b border-gray-300 mx-8 pb-6">
-                      <div class="text-center md:text-right">
-                          <h4 class="text-2xl md:text-xl font-semibold">5:00 PM–6:00 PM</h4>
-                      </div>
-                      <div class="text-center md:text-left">
-                          <h4 class="text-xl font-semibold">Cocktail Hour</h4>
-                      </div>
-                  </div>
-                  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mx-8 pb-6">
-                      <div class="text-center md:text-right">
-                          <h4 class="text-2xl md:text-xl font-semibold">6:00 PM–10:00 PM</h4>
-                      </div>
-                      <div class="text-center md:text-left">
-                          <h4 class="text-xl font-semibold">Dinner and Festivities</h4>
-                      </div>
-                  </div>
-              </div>
+    <div
+      id="expanded-1"
+      class="expanded-content hidden w-full h-full bg-white font-abhaya-libre text-the-knot p-5 pr-1 z-10 overflow-auto col-span-2 relative rounded-md"
+    >
+      <button class="close-expanded absolute top-2 right-4 text-2xl">
+        &times;
+      </button>
+      <div class="container h-full overflow-y-auto pr-4 flex items-start justify-center">
+        <div class="w-full my-auto mx-8 md:mx-16 lg:mx-32 xl:mx-56">
+          <h2 class="text-5xl font-bold mb-6 text-center">Schedule</h2>
+          <div class="text-center">
+            <div class="mb-4">
+              <p class="text-lg">11.30.24</p>
+              <p class="text-lg">1000 Westover Rd, Richmond, VA 23220</p>
+            </div>
           </div>
-      </div>
-  </div>
-  
-  
-  
-  
-  <div id="expanded-2" class="expanded-content hidden w-full h-full bg-white font-abhaya-libre text-the-knot p-5 pr-1 z-10 overflow-auto col-span-2 relative rounded-md">
-    <button class="close-expanded absolute top-2 right-4 text-2xl">×</button>
-    <div class="container h-full overflow-y-auto pr-4 flex items-start justify-center">
-        <div class="w-full my-auto mx-4 md:mx-8">
-            <h2 class="text-5xl font-bold mb-6 text-center">Hotel Accommodations</h2>
+          <div class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mx-8 mb-6">
+              <div class="text-center md:text-right">
+                <h4 class="text-2xl md:text-xl font-semibold">3:30 PM</h4>
+              </div>
+              <div class="text-center md:text-left">
+                <h4 class="text-xl font-semibold">Ceremony (Family Only)</h4>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mx-8 mb-6">
+              <div class="text-center md:text-right">
+                <h4 class="text-2xl md:text-xl font-semibold">
+                  5:00 PM–6:00 PM
+                </h4>
+              </div>
+              <div class="text-center md:text-left">
+                <h4 class="text-xl font-semibold">Cocktail Hour</h4>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mx-8 mb-6">
+              <div class="text-center md:text-right">
+                <h4 class="text-2xl md:text-xl font-semibold">
+                  6:00 PM–10:00 PM
+                </h4>
+              </div>
+              <div class="text-center md:text-left">
+                <h4 class="text-xl font-semibold">Dinner and Festivities</h4>
+              </div>
+            </div>
             <div class="text-center">
-                <h4 class="text-xl font-semibold mb-2">Courtyard by Marriott Richmond Scott’s Addition</h4>
-                <div class="mb-4">
-                    <p class="text-lg">2907 W Broad St, Richmond, VA 23230</p>
-                    <p class="text-md">Reference: Rajapakse-Fore Wedding Block</p>
-                    <p class="text-md">Distance from Venue: Approximately 2.5 miles</p>
-                </div>
+              <p class="mb-3">
+                <strong>Entry and Directions</strong>: The ceremony and
+                reception are being held indoors, on the first level of 1000
+                Westover at Maymont. The historic entrance on Westover Rd leads
+                directly into the atrium where guests will be able to check
+                their coats. An additional, handicap accessible entry is located
+                next to the parking lot on the modern addition of the building.
+              </p>
+              <p class="mb-3">
+                <strong>Parking</strong>: Guests who need parking should enter
+                the GPS address 1001 Spottswood Rd to get to the entrance of the
+                parking lot. If you see signs for the Maymont petting zoo you’re
+                in the right place!
+              </p>
+              <p class="mb-3">
+                <strong>Attire</strong>: ‘black tie optional' Go all out or keep
+                it simple, you’ll fit right in.
+              </p>
             </div>
-            <div class="space-y-6">
-                <p class="text-lg mx-8 mb-6">
-                    We've reserved a block of rooms at the Courtyard by Marriott in Scott’s Addition, a vibrant neighborhood known for its eclectic mix of restaurants, breweries, and entertainment options. This hotel offers a perfect base for exploring Richmond, with plenty of local spots just a short walk or drive away. 
-                    Scott’s Addition is famous for its craft breweries, including Ardent Craft Ales, The Veil Brewing Co., and Hardywood Park Craft Brewery, all within a mile of the hotel. If you're in the mood for a bite, you'll find fantastic restaurants like ZZQ Texas Craft Barbeque, Cochiloco, and Lunch & Supper available nearby.
-                </p>
-                <p class="text-lg mx-8 mb-6">
-                    For those looking to enjoy Richmond's vibrant nightlife, you'll be pleased to know that this area also boasts several trendy bars and cocktail lounges, perfect for unwinding after a day of wedding festivities. Plus, with the hotel only 2.5 miles away from the venue at Maymont, getting to and from the ceremony and reception will be a breeze.
-                </p>
-                <p class="text-lg mx-8 mb-6">
-                    Be sure to mention the Fore-Rajapakse Wedding Block when booking to receive the special rate. We can't wait to celebrate with you in Richmond!
-                </p>
-            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-
-<div id="expanded-3" class="expanded-content hidden w-full h-full bg-white font-abhaya-libre text-the-knot p-5 pr-1 z-10 overflow-auto col-span-2 relative rounded-md">
-  <button class="close-expanded absolute top-2 right-4 text-2xl">&times;</button>
-  <div class="container h-full overflow-y-auto pr-4 flex items-start justify-center">
-    <div class="w-full my-auto mx-4 md:mx-8">
-        <h2 class="text-5xl font-bold my-6 text-center">Things to do in Richmond</h2>
-            <div>
-                <div>
-                    <h3 class="text-3xl text-center font-bold pb-3">Places to Visit</h3>
-                    <ul class="list-disc list-inside text-lg">
-                        <li><strong>Maymont</strong> – A beautiful estate with gardens, wildlife exhibits, and a historic mansion.</li>
-                        <li><strong>Virginia Museum of Fine Arts</strong> – A world-class art museum with diverse collections.</li>
-                        <li><strong>Hollywood Cemetery</strong> – Historic cemetery with graves of notable figures and scenic views of the James River.</li>
-                        <li><strong>Lewis Ginter Botanical Garden</strong> – Stunning gardens and a conservatory.</li>
-                    </ul>
-                </div>
-    
-                <div>
-                    <h3 class="text-3xl text-center font-bold pt-5 pb-3">Restaurants</h3>
-                    <ul class="list-disc list-inside text-lg">
-                        <li><strong>Lemaire</strong> – Fine dining at The Jefferson Hotel.</li>
-                        <li><strong>Stella's</strong> – Delicious Greek cuisine.</li>
-                        <li><strong>Can Can Brasserie</strong> – French-inspired brasserie in Carytown.</li>
-                        <li><strong>Mama J's Kitchen</strong> – Soul food in Jackson Ward.</li>
-                    </ul>
-                </div>
-    
-                <div>
-                    <h3 class="text-3xl text-center font-bold pt-5 pb-3">Experiences</h3>
-                    <ul class="list-disc list-inside text-lg">
-                        <li><strong>Riverfront Canal Walk</strong> – A scenic walk along the canal in downtown Richmond.</li>
-                        <li><strong>James River Park</strong> – Outdoor activities like kayaking, hiking, and picnicking.</li>
-                        <li><strong>The Poe Museum</strong> – Explore the life and works of Edgar Allan Poe.</li>
-                        <li><strong>Shockoe Slip</strong> – Historic district with shops, restaurants, and nightlife.</li>
-                    </ul>
-                </div>
+    <div id="expanded-2" class="expanded-content hidden w-full h-full bg-white font-abhaya-libre text-the-knot p-5 pr-1 z-10 overflow-auto col-span-2 relative rounded-md">
+      <button class="close-expanded absolute top-2 right-4 text-2xl">×</button>
+      <div class="container h-full overflow-y-auto pr-4 flex items-start justify-center">
+        <div class="w-full my-auto text-center mx-8 md:mx-16 lg:mx-32 xl:mx-56">
+            <h2 class="text-5xl font-bold mb-6">
+            Hotel Accommodations
+          </h2>
+          <div class="">
+            <h4 class="text-xl font-semibold mb-2">
+              Courtyard by Marriott Richmond Scott’s Addition
+            </h4>
+            <div class="mb-6">
+              <p class="text-lg mb-2">2907 W Broad St, Richmond, VA 23230</p>
+              <p class="text-md mb-2">Reference: Rajapakse-Fore Wedding Block</p>
+              <p class="text-md mb-2">Distance from Venue: Approximately 2.5 miles</p>
+              <p>Call: 804-877-0010</p>
             </div>
+          </div>
+          <div class="space-y-6">
+            <p class="text-lg mx-8 mb-6">
+                We've reserved a block of rooms at the Courtyard by Marriott in Scott’s Addition, a vibrant neighborhood known for its eclectic mix of restaurants, breweries, and industrial history. The features a spacious lobby, Bistro bar and restaurant with Starbucks offerings, the Bistro Terrace featuring a community fire pit, and an upgraded Fitness Center with added Pelotons, Synergy360 equipment, and row machines
+            </p>
+            <p><strong>Be sure to mention the Rajapakse-Fore Wedding Block when booking to receive the special rate. We can't wait to celebrate with you in Richmond!</strong></p>
+          </div>
         </div>
-    </div>    
-  </div>    
-
+      </div>
+    </div>
+    <div id="expanded-3" class="expanded-content hidden w-full h-full bg-white font-abhaya-libre text-the-knot p-5 pr-1 z-10 overflow-auto col-span-2 relative rounded-md">
+      <button class="close-expanded absolute top-2 right-4 text-2xl">
+        &times;
+      </button>
+      <div class="container h-full overflow-y-auto pr-4 flex items-start justify-center">
+        <div class="w-full my-auto mx-8 md:mx-16 lg:mx-32 xl:mx-56">
+            <h2 class="text-5xl font-bold my-6 text-center">
+            Things to Do in Richmond
+          </h2>
+          <div>
+            <div>
+              <h3 class="text-3xl text-center font-bold mb-3">
+                Cultural Landmarks and Experiences
+              </h3>
+              <ul class="list-disc list-inside pl-5 space-y-2">
+                <li>
+                  <a href="https://maymont.org/" class="text-blue-400 hover:underline font-bold">
+                    Maymont
+                  </a> – A beautiful estate with gardens, wildlife exhibits, and a historic mansion (free admission)
+                </li>
+                <li>
+                  <a href="https://vmfa.museum/visit/" class="text-blue-400 hover:underline font-bold">
+                    Virginia Museum of Fine Arts
+                  </a> – A world-class art museum with diverse collections (free admission)
+                </li>
+                <li>
+                  <a href="https://byrdtheatre.org/" class="text-blue-400 hover:underline font-bold">
+                    The Byrd Theatre
+                  </a> – A landmark single-screen theatre
+                </li>
+                <li>
+                  <a href="https://venturerichmond.com/explore-downtown/riverfront-canal-walk/" class="text-blue-400 hover:underline font-bold">
+                    Riverfront Canal Walk
+                  </a> – A scenic walk along the canal in downtown Richmond                            
+            </div>
+            <div>
+              <h3 class="text-3xl text-center font-bold pt-5 mb-3">
+                Restaurants
+              </h3>
+              <ul class="list-disc list-inside pl-5 space-y-2">
+                <li>
+                  <a href="https://www.stanleysrva.com/" class="text-blue-400 hover:underline font-bold">
+                    Stanley’s
+                  </a> – Neighborhood hoagie joint ($$)
+                </li>
+                <li>
+                  <a href="https://www.orderperlysrichmond.com/" class="text-blue-400 hover:underline font-bold">
+                    Perly’s
+                  </a> – Local Delicatessen ($$)
+                </li>
+                <li>
+                  <a href="https://www.cancanrva.com/" class="text-blue-400 hover:underline font-bold">
+                    Can Can Brasserie
+                  </a> – French-inspired brasserie ($$$)
+                </li>
+                <li>
+                  <a href="https://bacchusrva.com/" class="text-blue-400 hover:underline font-bold">
+                    Bacchus
+                  </a> – Cozy, Mediterranean-inspired bistro ($$)
+                </li>
+                <li>
+                  <a href="https://www.joesinn.com/" class="text-blue-400 hover:underline font-bold">
+                    Joe’s Inn
+                  </a> – Neighborhood Italian Restaurant ($$)
+                </li>
+                <li>
+                  <a href="https://elchidorestaurant.com/" class="text-blue-400 hover:underline font-bold">
+                    El Chido
+                  </a> – Authentic Taqueria ($)
+                </li>
+              </ul>
+            </div>
+            <div>
+                <h3 class="text-3xl text-center font-bold pt-5 mb-3">
+                    Restaurants Near Hotel Block
+                </h3>
+                <ul class="list-disc list-inside pl-5 space-y-2">
+                <li>
+                  <a href="https://www.peterchangrichmond.com/" class="text-blue-400 hover:underline font-bold">
+                    Peter Chang
+                  </a> – Upscale Szechuan restaurant ($$)
+                </li>
+                <li>
+                  <a href="https://www.eazzyburger.com/" class="text-blue-400 hover:underline font-bold">
+                    Eazzy Burger
+                  </a> – Old-school burger joint ($)
+                </li>
+                <li>
+                  <a href="#" class="text-blue-400 hover:underline font-bold">
+                    Cochi Loco
+                  </a> – Lively Mexican spot ($$)
+                </li>
+                <li>
+                  <a href="#" class="text-blue-400 hover:underline font-bold">
+                    Brenner Pass
+                  </a> – Stylish Alpine eatery ($$$)
+                </li>
+              </ul>
+              <h4 class="text-xl text-center font-bold pt-5 mb-2">Takeout (Near Hotel Block)</h4> 
+              <ul class="list-disc list-inside pl-5 space-y-2">
+                <li>
+                  <a href="https://www.yelp.com/biz/scotts-market-richmond" class="text-blue-400 hover:underline font-bold">
+                    Scott’s Market
+                  </a> – Late night market and Mediterranean food to-go ($)
+                </li>
+                <li>
+                  <a href="https://mayalatinkitchenllc.com/?y_source=1_OTA5MzYyOTctNzE1LWxvY2F0aW9uLndlYnNpdGU%3D" class="text-blue-400 hover:underline font-bold">
+                    Maya Latin Kitchen
+                  </a> – Mexican fiesta-inspired dishes, to-go only ($)
+                </li>
+              </ul>
+            </div>
+            <div>
+                <h3 class="text-3xl text-center font-bold pt-5 mb-3">
+                    Bars
+                  </h3>
+                <ul class="list-disc list-inside pl-5 space-y-2">
+                    <li>
+                      <a href="https://jasperbarrva.com/" class="text-blue-400 hover:underline font-bold">
+                        The Jasper
+                      </a> – Chic lounge with an old-school vibe and artisanal cocktails ($$)
+                    </li>
+                    <li>
+                      <a href="https://cobracabanarva.square.site/" class="text-blue-400 hover:underline font-bold">
+                        Cobra Cabana
+                      </a> – Eclectic dive bar with cocktails, brunch, and light bites ($$)
+                    </li>
+                    <li>
+                      <a href="https://www.gettightrva.com/" class="text-blue-400 hover:underline font-bold">
+                        Get Tight Lounge
+                      </a> – Late night drinks and snacks in a lively venue ($)
+                    </li>
+                    <li>
+                      <a href="https://gwarbar.com/" class="text-blue-400 hover:underline font-bold">
+                        GWARBar
+                      </a> – Bar with pub fare inspired by the band Gwar ($)
+                    </li>
+                  </ul>                  
+            </div>
+            <div>
+                <h3 class="text-3xl text-center font-bold pt-6 pb-3">
+                    Bakeries & Cafes
+                  </h3>
+                  <ul class="list-disc list-inside pl-5 space-y-2">
+                    <li>
+                      <a href="https://www.minglewoodbakeshop.com/" class="text-blue-400 hover:underline font-bold">
+                        Minglewood Bake Shop
+                      </a> – 100% Vegan bakery with pastries, wraps, and specialty coffee drinks ($$)
+                    </li>
+                    <li>
+                      <a href="https://www.idlehandsbreadcompany.com/" class="text-blue-400 hover:underline font-bold">
+                        Idle Hands Bread Company
+                      </a> – French bakery specializing in sourdough bread and pastries ($$)
+                    </li>
+                    <li>
+                      <a href="https://www.rostovs.com/" class="text-blue-400 hover:underline font-bold">
+                        Rostov’s Coffee and Tea
+                      </a> – Richmond favorite with coffee, tea, and pastries ($)
+                    </li>
+                  </ul>
+                        
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
-
   </main>
-  <footer>
+  <footer class="bg-sapphire text-center content-center h-20 w-full p-4 relative">
+  <p class="text-white">
+    A Greenfield Project by
+    <a
+      href="https://github.com/shehanr"
+      class="text-blue-200 hover:underline font-bold"
+      >shehanr</a
+    >.
+    <span class="relative group cursor-pointer">
+      Made with <i class="bi bi-heart-fill text-red-500 px-1"></i> using Jekyll
+      and Tailwind
+    </span>
+  </p>
 </footer>
+
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="/assets/js/site.js"></script>
 </body>
