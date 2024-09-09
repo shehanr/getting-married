@@ -8,3 +8,7 @@ _site
 
 ### Mac ###
 .DS_Store
+
+# Ignore CSS output files
+/assets/css/main.css
+/assets/css/tailwind.css
